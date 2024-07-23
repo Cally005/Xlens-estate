@@ -1,0 +1,112 @@
+
+
+.home-p {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%; 
+}
+
+.film-cover {
+  position: relative;
+  background-color: rgba(0,0,0,.5);
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding-right: 50px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.logo{
+  margin: 10px;
+  padding-left: 50px;
+}
+.logo .homepage-image {
+  width: 150px; /* Adjust size as needed */
+}
+
+
+.dot-1, .dot-2, .dot-3 {
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+  background-color: white; /* Default color */
+  border-radius: 50%; /* Makes the dot circular */
+  display: inline-block;
+  margin: 0 5px; 
+  
+}
+
+.dot-1.active, .dot-2.active, .dot-3.active {
+  background-color: yellow; /* Changes color to yellow when active */
+}
+
+
+
+/* slider styles*/
+.p-pox {
+  position: absolute;
+  color: whitesmoke;
+}
+.s-content{
+  margin-left: 10px;
+}
+.p-pox p{
+  padding-left: 20px;
+  color: white;
+}
+
+.p-pox hr {
+  width: 1px;
+  height: 200px; /* Adjust as needed */
+  background-color: white;
+  border: none;
+/* Adjust spacing as needed */
+}
+
+
+/*bottom nav style*/
+.b-nav {
+  position: absolute;
+  bottom: -88px; /* Distance from the bottom */
+  right: 2px; /* Distance from the right */
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(155, 147, 74, 1);
+  width: 800px;
+  height: 150px;
+  padding: 20px;
+color: white;
+  
+}
+
+
+
+.arrow ul {
+  list-style-type: none;
+  gap: 20;
+  padding-right: 20px;
+}
+
+.arrow-1, .arrow-2 {
+  cursor: pointer;
+  color: white;
+}
