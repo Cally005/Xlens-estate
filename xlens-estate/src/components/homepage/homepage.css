@@ -1,19 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .home-p {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%; 
+  min-height: 700px;
+  position: relative; /* Needed to position the overlay correctly */
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 1; /* Place it below the text content */
+}
+
+
 .film-cover {
-  position: relative;
+  /* position: relative; */
   background-color: rgba(0,0,0,.5);
   min-height: 700px;
-  display: flex;
-  flex-direction: column;
-  
-
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .header {
@@ -21,6 +43,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  z-index: 2; /* Ensure the content is above the overlay */
+  position: relative; /* Needed to keep the content above the pseudo-element */
 }
 
 .navbar ul {
@@ -35,14 +59,31 @@
   text-decoration: none;
 }
 
-
-.logo{
+.logo {
   margin: 10px;
   padding-left: 50px;
 }
+
 .logo .homepage-image {
   width: 150px; /* Adjust size as needed */
 }
+
+.dots{
+  margin-top: 1rem;
+  margin-right: 520px;
+
+}
+
+/* .dots h4{
+  margin-right: 520px;
+
+} */
+
+.dots-con{
+
+  margin-top: 1rem;
+}
+
 
 
 .dot-1, .dot-2, .dot-3 {
@@ -52,41 +93,51 @@
   border-radius: 50%; /* Makes the dot circular */
   display: inline-block;
   margin: 0 5px; 
-  
+ 
 }
 
 .dot-1.active, .dot-2.active, .dot-3.active {
   background-color: yellow; /* Changes color to yellow when active */
 }
 
-
-
-/* slider styles*/
-.p-pox {
+/* slider styles */
+.parent {
   position: absolute;
   color: whitesmoke;
-}
-.s-content{
-  margin-left: 10px;
-}
-.p-pox p{
-  padding-left: 20px;
-  color: white;
+  align-items: left;
+  top: 150px;
+  justify-items: left;
+  z-index: 2; /* Ensure the content is above the overlay */
 }
 
-.p-pox hr {
+.parent  p{
+  max-width: 35%;
+  margin-left: 295px;
+}
+
+.parent  h2 {
+  margin-right: 520px;
+  margin-bottom: 1rem;
+}
+
+.parent  h1{
+  margin-right: 630px;
+}
+
+.parent hr {
   width: 1px;
-  height: 200px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
   background-color: white;
   border: none;
-/* Adjust spacing as needed */
+  margin-bottom: 12px;
+  margin-left: 320px;
+  /* Adjust spacing as needed */
 }
 
-
-/*bottom nav style*/
+/* bottom nav style */
 .b-nav {
   position: absolute;
-  bottom: -88px; /* Distance from the bottom */
+  bottom: -80px; /* Distance from the bottom */
   right: 2px; /* Distance from the right */
   display: flex;
   justify-content: space-between;
@@ -94,11 +145,9 @@
   width: 800px;
   height: 150px;
   padding: 20px;
-color: white;
-  
+  color: white;
+  z-index: 2; /* Ensure the content is above the overlay */
 }
-
-
 
 .arrow ul {
   list-style-type: none;
