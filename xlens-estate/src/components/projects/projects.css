@@ -42,7 +42,12 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 23px;
+  
+}
+
+.div-2 img{
+  max-width: 60%;
 }
 
 .film-cover h1{
@@ -171,6 +176,9 @@ html, body {
   margin-left: 380px;
 }
 
+.pro ul li :hover{
+  cursor: pointer;
+}
 
 .pro ul li.active h3 {
   color: rgba(248, 253, 0, 1);
