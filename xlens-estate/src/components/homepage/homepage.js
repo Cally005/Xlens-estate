@@ -98,7 +98,7 @@ const Homepage = () => {
         </div>
 
         <div className='b-nav'>
-          <div>
+          <div className='proj'>
             <p>Latest Project</p>
             <h4>Modern Industrial Loft</h4>
             <p>Year completed 2022</p>

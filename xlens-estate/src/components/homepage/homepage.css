@@ -29,13 +29,9 @@ html, body {
   z-index: 1; /* Place it below the text content */
 }
 
-
 .film-cover {
-  /* position: relative; */
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   min-height: 700px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .header {
@@ -68,23 +64,14 @@ html, body {
   width: 150px; /* Adjust size as needed */
 }
 
-.dots{
+.dots {
   margin-top: 1rem;
   margin-right: 520px;
-
 }
 
-/* .dots h4{
-  margin-right: 520px;
-
-} */
-
-.dots-con{
-
+.dots-con {
   margin-top: 1rem;
 }
-
-
 
 .dot-1, .dot-2, .dot-3 {
   width: 10px; /* Adjust size as needed */
@@ -93,14 +80,13 @@ html, body {
   border-radius: 50%; /* Makes the dot circular */
   display: inline-block;
   margin: 0 5px; 
- 
 }
 
 .dot-1.active, .dot-2.active, .dot-3.active {
   background-color: yellow; /* Changes color to yellow when active */
 }
 
-/* slider styles */
+/* Slider styles */
 .parent {
   position: absolute;
   color: whitesmoke;
@@ -110,17 +96,17 @@ html, body {
   z-index: 2; /* Ensure the content is above the overlay */
 }
 
-.parent  p{
+.parent p {
   max-width: 35%;
   margin-left: 295px;
 }
 
-.parent  h2 {
+.parent h2 {
   margin-right: 520px;
   margin-bottom: 1rem;
 }
 
-.parent  h1{
+.parent h1 {
   margin-right: 630px;
 }
 
@@ -134,7 +120,7 @@ html, body {
   /* Adjust spacing as needed */
 }
 
-/* bottom nav style */
+/* Bottom nav style */
 .b-nav {
   position: absolute;
   bottom: -80px; /* Distance from the bottom */
@@ -142,11 +128,17 @@ html, body {
   display: flex;
   justify-content: space-between;
   background-color: rgba(155, 147, 74, 1);
-  width: 800px;
-  height: 150px;
+  width: 50%;
+  height: 20%;
   padding: 20px;
   color: white;
   z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.proj{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .arrow ul {
@@ -158,4 +150,116 @@ html, body {
 .arrow-1, .arrow-2 {
   cursor: pointer;
   color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .home-p {
+    min-height: 600px;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .dots {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .parent p {
+    max-width: 50%;
+    margin-left: 0;
+  }
+  .parent{
+    display: none;
+  }
+
+
+  .s-content{
+    display: none;
+  }
+
+  .parent h2, .parent h1 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .parent hr {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .b-nav {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    height: auto;
+  }
+  .arrow{
+    min-height: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-p {
+    min-height: 500px;
+  }
+
+  .navbar ul {
+    gap: 5px;
+  }
+
+  .parent p {
+    max-width: 70%;
+  }
+
+  .b-nav {
+    padding: 10px;
+  }
+  .s-content{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-p {
+    min-height: 400px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .parent p {
+    max-width: 90%;
+  }
+  .parent{
+    display: none;
+  }
+
+  .proj {
+    padding: 5px;
+    display: none;
+  }
+  .s-content{
+    display: none;
+  }
+  .arrow{
+    min-height: 50%;
+    background-color: none;
+  }
 }
