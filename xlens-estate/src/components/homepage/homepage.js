@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import "./homepage.css";
 import dot1 from "../../assets/dot1.png";
 import logo from "../../assets/logo.png";
@@ -10,6 +11,7 @@ import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
 import Services from '../services/service';
 import Footer from '../footer/footer';
+import Header from '../header/header';
 
 const images = [bed, image2, image3];
 
@@ -26,24 +28,15 @@ const Homepage = () => {
     );
   };
 
+  
+
   return (
     <div className="homepage-container">
+          {/* <Header transparent /> */}
       <div className="home-p" style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
-        <div className="overlay"></div> {/* Overlay div */}
-        <div className="header">
-          <div className='logo'>
-            <img src={logo} alt='book' className="homepage-image" />
-          </div>
-          <nav className='navbar'>
-            <ul>
-              <li><a href="#">Project</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
-          </nav>
-        </div>
-
+        <div className="overlay"></div> 
+      
+        {/* <Header/> */}
         <div className='parent'>
           {currentImageIndex === 0 && (
             <div className='slide-1'>
@@ -120,7 +113,7 @@ const Homepage = () => {
       </div>
       <Projects/>
       <Services/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
  
   );

@@ -1,0 +1,43 @@
+/* header.css */
+.header {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .header.transparent {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .header.black {
+    background-color: black;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: yellow;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  

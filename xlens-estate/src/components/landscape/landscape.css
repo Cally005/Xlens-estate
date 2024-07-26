@@ -1,0 +1,139 @@
+/* exterior.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ex-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .ex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap; /* Ensure items don't wrap */
+  }
+  
+  .exm {
+    flex: 1;
+    max-width: 50%; /* Adjust as needed */
+  }
+  
+  .exm img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  
+  .ex-writeup {
+    flex: 1;
+    max-width: 50%; /* Adjust as needed */
+    padding: 20px;
+    margin: 10px;
+    color: white;
+  }
+  
+  .ex-writeup h1 {
+    display: flex;
+    font-size: 100px;
+  }
+  
+  .ex-writeup h6 {
+    display: flex;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  
+  .ex-writeup h5 {
+    display: flex;
+    font-size: 20px;
+  }
+  
+  .ex-imgs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .ex-1, .ex-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .ex-1 img, .ex-2 img {
+    width: calc(33.333% - 20px); /* Three images per row with margins */
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .ex {
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+  
+    .exm, .ex-writeup {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .ex-writeup h1 {
+      font-size: 80px; /* Adjust font size for medium screens */
+    }
+  
+    .ex-1 img, .ex-2 img {
+      width: calc(50% - 20px); /* Two images per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ex-writeup h1 {
+      font-size: 60px; /* Adjust font size for small screens */
+    }
+  
+    .ex-writeup h6 {
+      font-size: 13px;
+    }
+  
+    .ex-writeup h5 {
+      font-size: 18px;
+    }
+  
+    .ex-1 img, .ex-2 img {
+      width: calc(100% - 20px); /* One image per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ex-writeup h1 {
+      font-size: 40px; /* Further adjust font size for very small screens */
+    }
+  
+    .ex-writeup h6 {
+      font-size: 12px;
+    }
+  
+    .ex-writeup h5 {
+      font-size: 16px;
+    }
+  
+    .ex-home {
+      padding: 10px; /* Reduce padding for very small screens */
+    }
+  }
+  

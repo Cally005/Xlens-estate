@@ -9,6 +9,7 @@ import out2 from "../../assets/out2.png";
 import loouge4 from "../../assets/loouge4.png"
 import lounge from "../../assets/lounge.png"
 import Lounge3 from "../../assets/Lounge3.png"
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const [clickedIndex, setClickedIndex] = useState(null);
@@ -19,10 +20,10 @@ const Projects = () => {
     const animationStarted = useRef(false); // Track if animation has started
   
     const projectItems = [
-      { title: '- 3D Floor', image: Bedroom, description: 'Interior designs are classic age when looking at its layout. The point of using Lorem Ipsum.' },
-      { title: '- Interior Design', image: lounge, description: 'Interior designs are classic age when looking at its layout. The point of using Lorem Ipsum.' },
-      { title: '- Landscape Design', image: Lounge3, description: 'Interior designs are classic age when looking at its layout. The point of using Lorem Ipsum.' },
-      { title: '- Product Design', image: loouge4, description: 'Interior designs are classic age when looking at its layout. The point of using Lorem Ipsum.' },
+      { title: '- 3D Floor', image: Bedroom, description: 'Interior designs are classic age when looking at its layout. The point of using Lorem Ipsum.', link:'/floor' },
+      { title: '- Interior Design', image: lounge, description: 'Interior designs are classic age when looking at its layout. The point of using Lorem Ipsum.', link:'/exterior'},
+      { title: '- Landscape Design', image: Lounge3, description: 'Interior designs are classic age when looking at its layout. The point of using Lorem Ipsum.',link:'/landscape' },
+      { title: '- Product Design', image: loouge4, description: 'Interior designs are classic age when looking at its layout. The point of using Lorem Ipsum.' , link:'/products'},
     ];
   
     const handleClick = (index) => {
@@ -115,7 +116,8 @@ const Projects = () => {
         </div>
         <div className='div-2'>
           <h5>+ ALL PROJECTS</h5>
-          <img src={selectedImage} alt='book' className="bedroom-image" />
+          <Link to={clickedIndex !== null ? projectItems[clickedIndex].link : "#"}>
+           <img src={selectedImage} alt='book' className="bedroom-image" /></Link>
         </div>
       </div>
 
