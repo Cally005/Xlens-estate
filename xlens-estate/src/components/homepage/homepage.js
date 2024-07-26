@@ -96,11 +96,11 @@ const Homepage = () => {
             <h4>Modern Industrial Loft</h4>
             <p>Year completed 2022</p>
           </div>
-          <div>
+          <div className='loc'>
             <p>Location</p>
             <h4>New York, USA</h4>
           </div>
-          <div>
+          <div className='theme'>
             <h4>Theme & style</h4>
           </div>
           <div className='arrow'>
