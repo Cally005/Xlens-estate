@@ -129,19 +129,20 @@ html, body {
   right: 2px; /* Distance from the right */
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgba(155, 147, 74, 1);
   width: 50%;
-  height: 20%;
+  height: 30%;
   padding: 20px;
   color: white;
   z-index: 2; /* Ensure the content is above the overlay */
 }
 
-.proj{
+/* .proj{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .arrow ul {
   list-style-type: none;
