@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Xlens-estate/static/css/main.fba0eff7.css",
+    "main.js": "/Xlens-estate/static/js/main.83fb3733.js",
+    "static/media/image2.png": "/Xlens-estate/static/media/image2.bd74623a3a75226f2e4a.png",
+    "static/media/image3.png": "/Xlens-estate/static/media/image3.6edb77fa8767bad78251.png",
+    "static/media/bed.png": "/Xlens-estate/static/media/bed.beed0b0cf2051bb979a5.png",
+    "static/media/Exm.png": "/Xlens-estate/static/media/Exm.2d9cd73beddd4be2fce1.png",
+    "static/media/Bedroom.png": "/Xlens-estate/static/media/Bedroom.4e2ef47487a929ce1aeb.png",
+    "static/media/exd.png": "/Xlens-estate/static/media/exd.56a04f7c9911a17a2f45.png",
+    "static/media/exe.png": "/Xlens-estate/static/media/exe.4731dcf03be162b0809d.png",
+    "static/media/exf.png": "/Xlens-estate/static/media/exf.aa2e4240ebda429dc760.png",
+    "static/media/loouge4.png": "/Xlens-estate/static/media/loouge4.4c4da191568edc727abc.png",
+    "static/media/Lounge3.png": "/Xlens-estate/static/media/Lounge3.1edff6ae3f28f3378ad9.png",
+    "static/media/exc.png": "/Xlens-estate/static/media/exc.9362c3f0d866b2fed848.png",
+    "static/media/exb.png": "/Xlens-estate/static/media/exb.6fa51fe34971546fab74.png",
+    "static/media/lounge.png": "/Xlens-estate/static/media/lounge.02daeba258fe352a44ce.png",
+    "static/media/Exa.png": "/Xlens-estate/static/media/Exa.67d6697a15e7788581f6.png",
+    "static/media/abtimg.png": "/Xlens-estate/static/media/abtimg.d425512640ae19bb9ade.png",
+    "static/media/out2.png": "/Xlens-estate/static/media/out2.77cb64c95dff6096c294.png",
+    "static/media/bgcover.png": "/Xlens-estate/static/media/bgcover.78f84ade52e28fef716c.png",
+    "index.html": "/Xlens-estate/index.html",
+    "main.fba0eff7.css.map": "/Xlens-estate/static/css/main.fba0eff7.css.map",
+    "main.83fb3733.js.map": "/Xlens-estate/static/js/main.83fb3733.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fba0eff7.css",
+    "static/js/main.83fb3733.js"
+  ]
+}
