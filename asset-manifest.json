@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Xlens-estate/static/css/main.fba0eff7.css",
-    "main.js": "/Xlens-estate/static/js/main.83fb3733.js",
+    "main.css": "/Xlens-estate/static/css/main.6316903b.css",
+    "main.js": "/Xlens-estate/static/js/main.00ac5ebb.js",
     "static/media/image2.png": "/Xlens-estate/static/media/image2.bd74623a3a75226f2e4a.png",
     "static/media/image3.png": "/Xlens-estate/static/media/image3.6edb77fa8767bad78251.png",
     "static/media/bed.png": "/Xlens-estate/static/media/bed.beed0b0cf2051bb979a5.png",
@@ -20,11 +20,11 @@
     "static/media/out2.png": "/Xlens-estate/static/media/out2.77cb64c95dff6096c294.png",
     "static/media/bgcover.png": "/Xlens-estate/static/media/bgcover.78f84ade52e28fef716c.png",
     "index.html": "/Xlens-estate/index.html",
-    "main.fba0eff7.css.map": "/Xlens-estate/static/css/main.fba0eff7.css.map",
-    "main.83fb3733.js.map": "/Xlens-estate/static/js/main.83fb3733.js.map"
+    "main.6316903b.css.map": "/Xlens-estate/static/css/main.6316903b.css.map",
+    "main.00ac5ebb.js.map": "/Xlens-estate/static/js/main.00ac5ebb.js.map"
   },
   "entrypoints": [
-    "static/css/main.fba0eff7.css",
-    "static/js/main.83fb3733.js"
+    "static/css/main.6316903b.css",
+    "static/js/main.00ac5ebb.js"
   ]
 }
